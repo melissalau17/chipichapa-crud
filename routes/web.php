@@ -13,8 +13,6 @@ Route::post('/store', [EmployeeController::class, 'store'])->name('store');
 
 Route::get('/dashboard', [EmployeeController::class, 'show'])->name('dashboard');
 
-Route::get('/detail-employee/{id}', [EmployeeController::class, 'showDetail']);
-
 Route::get('/edit-employee/{id}', [EmployeeController::class, 'edit'])->name('edit');
 
 Route::patch('/update-employee/{id}', [EmployeeController::class, 'update'])->name('update');
